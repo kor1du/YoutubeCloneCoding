@@ -1,0 +1,46 @@
+:root {
+  --background-color: #212121;
+  --text-color: white;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.header_container {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_logo_title {
+  display: flex;
+  width: 30vw;
+  align-items: center;
+  justify-content: left;
+  padding: 0px 15px;
+}
+
+.header_logo_title_icon {
+  color: #0091ea;
+  font-size: 3em;
+}
+
+.header_logo_title_name {
+  margin-left: 5px;
+  font-size: 2em;
+}
+
+.header_icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 10%;
+}
