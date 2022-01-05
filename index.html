@@ -15,158 +15,161 @@
 </head>
 
 <body>
-
     <header class="header_container">
-        <logo class="header_logo">
-            <a href="#here" class="header_logo_title">
-                <i class="header_logo_title_icon fab fa-youtube"></i>
-                <p class="header_logo_title_name">Youtube</p>
-            </a>
-        </logo>
-        <icons class="header_icons">
-            <a href="#here"><i class="header_icons_search fas fa-search"></i></a>
-            <a href="#here"><i class="header_icons_ellipsis fas fa-ellipsis-v"></i></a>
-        </icons>
+        <div class="header">
+            <logo class="header_logo">
+                <a href="#here" class="header_logo_title">
+                    <i class="header_logo_title_icon fab fa-youtube"></i>
+                    <p class="header_logo_title_name">Youtube</p>
+                </a>
+            </logo>
+            <icons class="header_icons">
+                <a href="#here"><i class="header_icons_search fas fa-search"></i></a>
+                <a href="#here"><i class="header_icons_ellipsis fas fa-ellipsis-v"></i></a>
+            </icons>
+        </div>
+        <video class="article_video" src="DemoVideo.avi" controlslist="nodownload" controls muted></video>
     </header>
 
-    <article class="article_container">
-        <video class="article_video" src="DemoVideo.avi" controlslist="nodownload" controls muted></video>
-        <span class="article_hashtag">#DreamCoding #DreamCoders #Dong</span>
-        <div class="article_title">
-            <span class="article_title_name">
-                Clone Coding: Youtube Movile Website 유튜브 모바일 웹사이트 따라 만들기 | 프론트엔드 개발자 입문편:
-                HTML, CSS, JavaScript 드림코딩
-            </span>
-            <a href="#here"><i class="article_title_more fas fa-caret-down" onclick="clickMore()"></i></a>
-        </div>
-        <span class=" article_view">1M view 1 month ago</span>
-        <div class="article_button">
-            <a href="#here" class="article_button_thumbs-up">
-                <i class="article_button_thumbs-up_icon fas fa-thumbs-up" onclick="clickLike()"></i>
-                <p id="article_likes">0</p>
-            </a>
-            <a href="#here" class="article_button_thumbs-down">
-                <i class=" article_button_thumbs-down_icon fas fa-thumbs-down" onclick="clickDislike()"></i>
-                <p id="article_dislike">0</p>
-            </a>
-            <a href="#here" class="article_button_share">
-                <i class="article_button_share_icon fas fa-share" onclick="clickShare()"></i>
-                <p class="article_button_share_name">Share</p>
-            </a>
-            <a href="#here" class="article_button_save">
-                <i class="article_button_save_icon fas fa-plus" onclick="clickSave()"></i>
-                <p class="article_button_save_name">Save</p>
-            </a>
-            <a href="#here" class="article_button_flag">
-                <i class="article_button_flag_icon fas fa-flag" onclick="clickReport()"></i>
-                <p class="article_button_flag_name">Report</p>
-            </a>
-        </div>
-        <div class="article_shareBox">
-            <div class="article_shareBox_title">
-                <spn class="shareBox_title_share">공유</spn>
-                <a href="#here"><i class="afas fa-times" onclick="clickShare()"></i></a>
+    <div class="test">
+        <article class="article_container">
+            <span class="article_hashtag">#DreamCoding #DreamCoders #Dong</span>
+            <div class="article_title">
+                <span class="article_title_name">
+                    Clone Coding: Youtube Movile Website 유튜브 모바일 웹사이트 따라 만들기 | 프론트엔드 개발자 입문편:
+                    HTML, CSS, JavaScript 드림코딩
+                </span>
+                <a href="#here"><i class="article_title_more fas fa-caret-down" onclick="clickMore()"></i></a>
             </div>
-            <ul class="article_shareBox_linkBox">
-                <li>
-                    <a href="#here">
-                        <i class="fab fa-twitter"></i>
-                        <h>퍼가기</h>
-                    </a>
-                </li>
-                <li>
-                    <a href="#here">
-                        <i class="fab fa-twitter"></i>
-                        <h>카카오스토리</h>
-                    </a>
-                </li>
-                <li>
-                    <a href="#here">
-                        <i class="fab fa-twitter"></i>
-                        <h>WhatsApp</h>
-                    </a>
-                </li>
-                <li>
-                    <a href="#here">
-                        <i class="fab fa-twitter"></i>
-                        <h>facebook</h>
-                    </a>
-                </li>
-                <li>
-                    <a href="#here">
-                        <i class="fab fa-twitter"></i>
-                        <h>Twitter</h>
-                    </a>
-                </li>
-                <li>
-                    <a href="#here">
-                        <i class="fab fa-twitter"></i>
-                        <h>email</h>
-                    </a>
-                </li>
-            </ul>
-            <div class="article_shareBox_url_container">
-                <div class="article_shareBox_url">
-                    <span id="article_shareBox_url_link">https://youtu.be/0EVVKs6DQLo</span>
-                    <a href="#here">
-                        <span id="article_shareBox_url_copy" onclick="linkCopy()">복사</span>
-                    </a>
+            <span class=" article_view">1M view 1 month ago</span>
+            <div class="article_button">
+                <a href="#here" class="article_button_thumbs-up">
+                    <i class="article_button_thumbs-up_icon fas fa-thumbs-up" onclick="clickLike()"></i>
+                    <p id="article_likes">0</p>
+                </a>
+                <a href="#here" class="article_button_thumbs-down">
+                    <i class=" article_button_thumbs-down_icon fas fa-thumbs-down" onclick="clickDislike()"></i>
+                    <p id="article_dislike">0</p>
+                </a>
+                <a href="#here" class="article_button_share">
+                    <i class="article_button_share_icon fas fa-share" onclick="clickShare()"></i>
+                    <p class="article_button_share_name">Share</p>
+                </a>
+                <a href="#here" class="article_button_save">
+                    <i class="article_button_save_icon fas fa-plus" onclick="clickSave()"></i>
+                    <p class="article_button_save_name">Save</p>
+                </a>
+                <a href="#here" class="article_button_flag">
+                    <i class="article_button_flag_icon fas fa-flag" onclick="clickReport()"></i>
+                    <p class="article_button_flag_name">Report</p>
+                </a>
+            </div>
+            <div class="article_shareBox">
+                <div class="article_shareBox_title">
+                    <spn class="shareBox_title_share">공유</spn>
+                    <a href="#here"><i class="fas fa-times-circle" onclick="clickShare()"></i></i></a>
                 </div>
-            </div>
-        </div>
-        <div class="article_profile">
-            <div class="article_profile_box">
-                <i class="article_profile_icon fas fa-user-circle"></i>
-                <div class="article_profile_info">
-                    <p class="profile_detail_name">이동욱</p>
-                    <p>1M subscribers</p>
+                <ul class="article_shareBox_linkBox">
+                    <li>
+                        <a href="#here">
+                            <i class="fab fa-twitter"></i>
+                            <h>퍼가기</h>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#here">
+                            <i class="fab fa-twitter"></i>
+                            <h>카카오스토리</h>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#here">
+                            <i class="fab fa-twitter"></i>
+                            <h>WhatsApp</h>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#here">
+                            <i class="fab fa-twitter"></i>
+                            <h>facebook</h>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#here">
+                            <i class="fab fa-twitter"></i>
+                            <h>Twitter</h>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#here">
+                            <i class="fab fa-twitter"></i>
+                            <h>email</h>
+                        </a>
+                    </li>
+                </ul>
+                <div class="article_shareBox_url_container">
+                    <div class="article_shareBox_url">
+                        <span id="article_shareBox_url_link">https://youtu.be/0EVVKs6DQLo</span>
+                        <a href="#here">
+                            <span id="article_shareBox_url_copy" onclick="linkCopy()">복사</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <a href="#here" class="article_profile_subscribe" onclick="clickSubscribe()">Subscribe</a>
+            <div class="article_profile">
+                <div class="article_profile_box">
+                    <i class="article_profile_icon fas fa-user-circle"></i>
+                    <div class="article_profile_info">
+                        <p class="profile_detail_name">이동욱</p>
+                        <p>1M subscribers</p>
+                    </div>
+                </div>
+                <a href="#here" class="article_profile_subscribe" onclick="clickSubscribe()">Subscribe</a>
+            </div>
+        </article>
+        <footer>
+            <p class="footer_upNext">Up next</p>
+            <ul class="footer_ul">
+                <li class="footer_li">
+                    <a href="#here">
+                        <video class="footer_li_video" src="[SHANA]SampleVideo1.mp4"></video>
+                        <div class="footer_li_info">
+                            <p class="footer_li_info_title">프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발 입문자편 강의를 시작합니다 💖 (HTML,
+                                CSS,
+                                Javascript + 실전 프로젝트)
+                            </p>
+                    </a>
+                    <p class="footer_li_info_author">드림코딩 by 엘리</p>
+                    <p class="footer_li_info_view">82K views</p>
+    </div>
+    </li>
+    <li class="footer_li">
+        <a href="#here">
+            <video class="footer_li_video" src="[SHANA]SampleVideo2.mp4"></video>
+            <div class="footer_li_info">
+                <p class="footer_li_info_title">프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발 입문자편 강의를 시작합니다 👏 (HTML,
+                    CSS,Javascript + 실전 프로젝트)
+                </p>
+        </a>
+        <p class="footer_li_info_author">드림코딩 by 엘리</p>
+        <p class="footer_li_info_view">82K views</p>
         </div>
-    </article>
-
-    <footer>
-        <p class="footer_upNext">Up next</p>
-        <ul class="footer_ul">
-            <li class="footer_li">
-                <a href="#here">
-                    <video class="footer_li_video" src="[SHANA]SampleVideo1.mp4"></video>
-                    <div class="footer_li_info">
-                        <p class="footer_li_info_title">프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발 입문자편 강의를 시작합니다 💖 (HTML, CSS,
-                            Javascript + 실전 프로젝트)
-                        </p>
-                </a>
-                <p class="footer_li_info_author">드림코딩 by 엘리</p>
-                <p class="footer_li_info_view">82K views</p>
-                </div>
-            </li>
-            <li class="footer_li">
-                <a href="#here">
-                    <video class="footer_li_video" src="[SHANA]SampleVideo2.mp4"></video>
-                    <div class="footer_li_info">
-                        <p class="footer_li_info_title">프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발 입문자편 강의를 시작합니다 👏 (HTML,
-                            CSS,Javascript + 실전 프로젝트)
-                        </p>
-                </a>
-                <p class="footer_li_info_author">드림코딩 by 엘리</p>
-                <p class="footer_li_info_view">82K views</p>
-                </div>
-            </li>
-            <li class="footer_li">
-                <a href="#here">
-                    <video class="footer_li_video" src="[SHANA]SampleVideo3.mp4"></video>
-                    <div class="footer_li_info">
-                        <p class="footer_li_info_title">프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발 입문자편 강의를 시작합니다 ⭐️ (HTML,
-                            CSS,Javascript + 실전 프로젝트)
-                        </p>
-                </a>
-                <p class="footer_li_info_author">드림코딩 by 엘리</p>
-                <p class="footer_li_info_view">82K views</p>
-                </div>
-            </li>
-        </ul>
+    </li>
+    <li class="footer_li">
+        <a href="#here">
+            <video class="footer_li_video" src="[SHANA]SampleVideo3.mp4"></video>
+            <div class="footer_li_info">
+                <p class="footer_li_info_title">프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발 입문자편 강의를 시작합니다 ⭐️ (HTML,
+                    CSS,Javascript + 실전 프로젝트)
+                </p>
+        </a>
+        <p class="footer_li_info_author">드림코딩 by 엘리</p>
+        <p class="footer_li_info_view">82K views</p>
+        </div>
+    </li>
+    </ul>
     </footer>
+    </div>
 </body>
 
 </html>

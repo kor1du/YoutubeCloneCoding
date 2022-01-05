@@ -117,7 +117,7 @@ article a {
 .shareBox_title_share {
   padding: 0px 15px;
 }
-.fa-times {
+.fa-times-circle {
   font-size: 2em;
   padding: 0px 15px;
 }
@@ -134,7 +134,6 @@ article a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 5px solid #aeea00;
   border-radius: 50%;
   height: 70px;
   width: 70px;
@@ -211,4 +210,33 @@ article a {
 .article_profile_subscribe.active {
   background-color: #f50057;
   color: black;
+}
+
+@media only screen and (min-width: 800px) {
+  .test {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  article {
+    width: 50vw;
+  }
+
+  .article_button {
+    width: 50vw;
+  }
+
+  .article_shareBox.active {
+    width: 49.5vw;
+  }
+
+  .article_shareBox.active li i {
+    width: 50px;
+    font-size: 1m;
+  }
+
+  .article_shareBox_url_container {
+    font-size: 0.66em;
+  }
 }
