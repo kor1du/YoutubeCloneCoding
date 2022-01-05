@@ -100,7 +100,7 @@ article a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 95vw;
+  width: 500px;
   border: 2px solid black;
   margin: 20px 0px;
 }
@@ -134,16 +134,18 @@ article a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  padding: 0 10px;
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
   font-size: 2em;
+  border-radius: 50%;
+  padding: 0 10px;
 }
 .article_shareBox_linkBox li h {
+  display: inline-block;
+  width: 50px;
   font-size: 1em;
   text-align: center;
-  display: block;
 }
 
 .article_shareBox_url_container {
@@ -228,15 +230,15 @@ article a {
   }
 
   .article_shareBox.active {
-    width: 49.5vw;
+    position: absolute;
+    background-color: white;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
   }
 
-  .article_shareBox.active li i {
-    width: 50px;
-    font-size: 1m;
-  }
-
-  .article_shareBox_url_container {
-    font-size: 0.66em;
+  .article_shareBox_linkBox li {
+    width: 100px;
   }
 }
