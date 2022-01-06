@@ -73,3 +73,10 @@ function linkCopy() {
   document.execCommand('copy');
   document.body.removeChild(textarea);
 }
+
+function resizeHeight() {
+  const videoHeight = document.getElementById('footer_li_video');
+  videoHeight.style.width = '200px';
+  videoHeight.style.height = '300px';
+  alert(videoHeight.style.height);
+}

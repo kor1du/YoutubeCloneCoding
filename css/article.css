@@ -100,7 +100,7 @@ article a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 500px;
+  width: 85vw;
   border: 2px solid black;
   margin: 20px 0px;
 }
@@ -130,20 +130,20 @@ article a {
   text-align: center;
 }
 
-.article_shareBox_linkBox li i {
+.article_shareBox_linkBox a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 2px solid black;
+  align-items: center;
+}
+
+.article_shareBox_linkBox li i {
   width: 50px;
   height: 50px;
   font-size: 2em;
-  border-radius: 50%;
-  padding: 0 10px;
 }
-.article_shareBox_linkBox li h {
-  display: inline-block;
-  width: 50px;
+.article_shareBox_linkBox li span {
+  width: 80px;
   font-size: 1em;
   text-align: center;
 }
@@ -238,7 +238,7 @@ article a {
     transform: translate(-50%, 50%);
   }
 
-  .article_shareBox_linkBox li {
-    width: 100px;
+  .article_button.active {
+    display: flex;
   }
 }

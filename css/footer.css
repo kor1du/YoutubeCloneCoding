@@ -16,21 +16,15 @@ footer a {
   padding: 0px;
 }
 
-.footer_li {
-  display: flex;
-  margin-left: 15px;
-  width: 95%;
-  margin-bottom: 15px;
-}
-
 .footer_li_video {
   width: 200px;
   margin-right: 15px;
 }
 
-.footer_li_info_title {
-  font-size: 1em;
-  margin: 0;
+.footer_li_title {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
 }
 
 .footer_li_info_author,
