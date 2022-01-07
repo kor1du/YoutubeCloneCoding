@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <script src="https://kit.fontawesome.com/4a9e32f85e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CloneCoding//css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="" class="fab fa-youtube"></a>
+            <span>Youtube</span>
+        </div>
+        <div class="icons">
+            <button class="fas fa-search"></button>
+            <button class="fas fa-ellipsis-v"></button>
+        </div>
+    </header>
+
+    <!-- Video Player -->
+    <section class="player">
+        <video controls muted src="/Video/DemoVideo.mp4"></video>
+    </section>
+
+    <div class="infoAndUpNext">
+        <!-- Vidoe Info -->
+        <section class="info">
+            <!-- Metadata -->
+            <div class="metadata">
+                <ul class="hashtags">
+                    <li>
+                        <a href="#none">
+                            <span>#360RA</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <span>#dojacat</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <span>#kissmemore</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="titleAndButton">
+                    <span>클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                    <button class="moreBtn">
+                        <icon class="fas fa-caret-down"></icon>
+                    </button>
+                </div>
+                <span class="views">1M views 1 month ago</span>
+            </div>
+            <!-- Actions -->
+            <ul class="actions">
+                <li>
+                    <button>
+                        <i class="active fas fa-thumbs-up"></i>
+                        <p>1K</p>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="fas fa-thumbs-down"></i>
+                        <p>0</p>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="fas fa-share"></i>
+                        <p>Share</p>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="fas fa-plus"></i>
+                        <p>Save</p>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="fab fa-font-awesome-flag"></i>
+                        <p>Report</p>
+                    </button>
+                </li>
+            </ul>
+            <!-- Channel Description -->
+            <div class="channel">
+                <div class="metadata">
+                    <img src="/Img/Dojacat.png" alt="도자캣">
+                    <div class="info">
+                        <p class="name">
+                            DojaCat
+                        </p>
+                        <p class="subscribers">
+                            10M Subscribers
+                        </p>
+                    </div>
+                </div>
+                <button class="subscribe">
+                    <span>subscribe</span>
+                </button>
+            </div>
+        </section>
+        <section class="upNext">
+            <p class="title">Up next</p>
+            <ul>
+                <li class="item">
+                    <div class="img"><img src="/Img/Thumbnail1.png" alt="두아 리파"></div>
+                    <div class="info">
+                        <p class="title">
+                            [두아 리파] 🌟너는 내 별빛달빛🌙 Dua Lipa - Levitating 가사/해석/한글자막
+                        </p>
+                        <p class="name">
+                            DuaLipa
+                        </p>
+                        <p class="views">
+                            1M views
+                        </p>
+                    </div>
+                    <button>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="/Img/Thumbnail1.png" alt="두아 리파"></div>
+                    <div class="info">
+                        <p class="title">
+                            [두아 리파] 🌟너는 내 별빛달빛🌙 Dua Lipa - Levitating 가사/해석/한글자막
+                        </p>
+                        <p class="name">
+                            DuaLipa
+                        </p>
+                        <p class="views">
+                            1M views
+                        </p>
+                    </div>
+                    <button>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="/Img/Thumbnail1.png" alt="두아 리파"></div>
+                    <div class="info">
+                        <p class="title">
+                            [두아 리파] 🌟너는 내 별빛달빛🌙 Dua Lipa - Levitating 가사/해석/한글자막
+                        </p>
+                        <p class="name">
+                            DuaLipa
+                        </p>
+                        <p class="views">
+                            1M views
+                        </p>
+                    </div>
+                    <button>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
