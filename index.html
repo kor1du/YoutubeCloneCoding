@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <script src="https://kit.fontawesome.com/4a9e32f85e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#here" class="logo">
+            <i class="fab fa-youtube"></i><span class="name">Youtube</span>
+        </a>
+
+        <div class="icons">
+            <button class="searchBtn">
+                <i class="fas fa-search" onClick="clickSearchBtn()"></i>
+                <input type="text" id="searchTextBox">
+                <Button class="search">검색</Button>
+            </button>
+            <button class="moreBtn">
+                <i class="fas fa-ellipsis-v"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- VideoPlayer -->
+    <VideoPlayer>
+        <video src="DemoVideo.mp4" controls></video>
+    </VideoPlayer>
+    <div class="container">
+        <Section class="info">
+            <div class="metadata">
+                <ul class="hashtags">
+                    <li>#MikeWilliams</li>
+                    <li>#Mesto</li>
+                    <li>#Spinin</li>
+                </ul>
+                <div id="title">
+                    <p class="title_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio aliquid accusamus
+                        vero.
+                        Dignissimos
+                        soluta corporis fugit maxime ipsam, quos cupiditate velit, tempora veritatis ullam fuga deleniti
+                        repudiandae tempore nam nemo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore,
+                        corrupti voluptate doloribus earum qui est placeat natus saepe architecto reprehenderit
+                        dignissimos,
+                        quas ullam nesciunt eos ratione commodi? Rem, fugiat ipsa!
+                    </p>
+                    <button>
+                        <i class="fas fa-caret-down" onclick="clickReadMoreBtn()"></i>
+                    </button>
+                </div>
+                <div class="views">
+                    <p>10 views 1 second ago</p>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button class="likeBtn">
+                    <i class="fas fa-thumbs-up" onclick="clickLikeBtn()"></i>
+                    <p>10</p>
+                </button>
+                <button class="dislikeBtn">
+                    <i class="fas fa-thumbs-down" onclick="clickDislikeBtn()"></i>
+                    <p>0</p>
+                </button>
+                <button class="shareBtn">
+                    <i class="fas fa-share" onclick="clickShareBtn()"></i>
+                    <p>Share</p>
+                </button>
+                <button class="SaveBtn">
+                    <i class="fas fa-plus" onclick="clickSaveBtn()"></i>
+                    <p>Save</p>
+                </button>
+                <button class="ReportBtn">
+                    <i class="fab fa-font-awesome-flag" onclick="clickReportBtn()"></i>
+                    <p>Report</p>
+                </button>
+            </div>
+
+            <div class="profile">
+                <div class="metadata">
+                    <img src="SampleProfileImg.jpg" alt="IU" class="profile_img">
+                    <div class="nameAndSubscriber">
+                        <p class="name">IU</p>
+                        <p class="subscriber">100M Subcribers</p>
+                    </div>
+                </div>
+
+                <button class="subscribe" onclick="clickSubscribeBtn()">
+                    SUBSCRIBE
+                </button>
+            </div>
+        </Section>
+
+        <Section class="upNext">
+            <p class="info">Up next</p>
+
+            <ul class="videoList">
+                <li class="item">
+                    <div class="img">
+                        <img src="Thumbnail1.jpg" alt="" class="thumbnail">
+                    </div>
+                    <div class="metadata">
+                        <p class="title">KSHMR - Around The World (Feat. NOUMENN) [Official Music Video]</p>
+                        <p class="name">KSHMR</p>
+                        <p class="views">82K views</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="img">
+                        <img src="Thumbnail2.jpg" alt="" class="thumbnail">
+                    </div>
+                    <div class="metadata">
+                        <p class="title">KSHMR - Around The World (Feat. NOUMENN) [Official Music Video]</p>
+                        <p class="name">KSHMR</p>
+                        <p class="views">82K views</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="img">
+                        <img src="Thumbnail3.jpg" alt="" class="thumbnail">
+                    </div>
+                    <div class="metadata">
+                        <p class="title">KSHMR - Around The World (Feat. NOUMENN) [Official Music Video]</p>
+                        <p class="name">KSHMR</p>
+                        <p class="views">82K views</p>
+                    </div>
+                </li>
+            </ul>
+        </Section>
+    </div>
+</body>
+
+</html>

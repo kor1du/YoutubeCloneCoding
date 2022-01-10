@@ -1,0 +1,253 @@
+:root {
+  --background-color: #263238;
+  --logo-color: #ff6d00;
+  --color: #ffffff;
+  --hashtags-color: #528fdf;
+  --gray-color: #757575;
+  --dark-gray-color: #373737;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --red-color: #d50000;
+
+  --padding: 15px;
+
+  --very-big-font-size: 45px;
+  --big-font-size: 30px;
+  --medium-font-size: 20px;
+  --small-font-size: 16px;
+  --very-small-font-size: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container section {
+  padding: 0px var(--padding);
+  padding-top: var(--padding);
+}
+
+header,
+header .icons Button i {
+  display: flex;
+  padding: var(--padding);
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  color: white;
+  font-size: var(--very-big-font-size);
+}
+
+header .icons {
+  display: flex;
+  align-items: center;
+}
+
+header .logo i {
+  color: var(--logo-color);
+}
+
+header .logo .name {
+  color: var(--white-color);
+}
+
+header .icons .searchBtn i.active {
+  display: none;
+}
+
+header .icons #searchTextBox,
+header .icons .search {
+  display: none;
+}
+
+header .icons .search {
+  background-color: var(--white-color);
+  margin-left: 10px;
+}
+header .icons #searchTextBox.active,
+header .icons .search.active {
+  display: flex;
+}
+
+header .icons .searchBtn header .logo span {
+  color: var(--white-color);
+}
+
+VideoPlayer video {
+  width: 100%;
+}
+
+.info .metadata .hashtags {
+  display: flex;
+  color: var(--hashtags-color);
+}
+
+.info .metadata .hashtags li {
+  padding-right: calc(var(--padding) / 4);
+  padding-bottom: var(--padding);
+}
+
+.info .metadata #title {
+  display: flex;
+  align-items: flex-start;
+}
+
+.info .metadata #title p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.info .metadata #title .title_p.active {
+  display: block;
+}
+
+.info .metadata .title button {
+  height: 100%;
+}
+
+.info .metadata .views {
+  padding: var(--padding) 0px;
+  color: var(--gray-color);
+}
+
+.info .actions {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.info .actions i {
+  font-size: var(--very-big-font-size);
+  color: var(--gray-color);
+}
+
+.info .actions p {
+  padding: var(--padding) 0px;
+}
+
+.info .actions .fa-thumbs-up.active {
+  color: var(--red-color);
+}
+
+.info .actions .fa-thumbs-down.active {
+  color: var(--red-color);
+}
+
+.info .actions .fa-share.active {
+  color: var(--red-color);
+}
+
+.info .actions .fa-plus.active {
+  color: var(--red-color);
+}
+
+.info .actions .fa-font-awesome-flag.active {
+  color: var(--red-color);
+}
+
+.info .profile {
+  border-top: 1px solid var(--dark-gray-color);
+  border-bottom: 1px solid var(--dark-gray-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info .profile .metadata {
+  padding: var(--padding) 0px;
+  display: flex;
+  align-items: center;
+}
+
+.info .profile .profile_img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.info .profile .metadata .nameAndSubscriber {
+  font-size: var(--big-font-size);
+  padding: 0px var(--padding);
+}
+
+.info .profile .metadata .nameAndSubscriber .subscriber {
+  font-size: var(--medium-font-size);
+  color: var(--gray-color);
+}
+
+.info .profile .subscribe {
+  color: gray;
+  font-size: var(--big-font-size);
+}
+
+.info .profile .subscribe.active {
+  color: var(--red-color);
+}
+
+.upNext .info {
+  padding-bottom: var(--padding);
+}
+
+.upNext .videoList {
+  display: flex;
+  flex-direction: column;
+}
+.upNext .videoList .item {
+  display: flex;
+  margin-bottom: var(--padding);
+}
+
+.upNext .videoList .item .img {
+  flex: 1 1 35%;
+  min-width: 200px;
+}
+
+.upNext .videoList .item .img img {
+  width: 100%;
+}
+.upNext .videoList .item .metadata {
+  margin-top: -6px;
+  flex: 1 1 60%;
+}
+
+.upNext .videoList .item .metadata .title {
+  font-size: var(--medium-font-size);
+}
+.upNext .videoList .item .metadata .name,
+.upNext .videoList .item .metadata .views {
+  font-size: var(--very-small-font-size);
+  color: var(--gray-color);
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    display: flex;
+  }
+
+  .container section .info {
+    width: 50vw;
+  }
+
+  .container section .upNext {
+    flex: 1 1 50%;
+  }
+}
